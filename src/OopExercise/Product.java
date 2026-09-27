@@ -10,12 +10,12 @@ public class Product {
     
     
     private String name;
-    private int price;
+    private double price;
     private int stock;
     
-    public void seteName(String n){
+    public void setName(String name){
     
-        name=n;
+        this.name=name;
     
     }
     
@@ -25,20 +25,21 @@ public class Product {
     
     }
     
-    public void setPrice(int p){
-        price=p;
+    public void setPrice(double price){
+        if (price<0) System.out.println("You dont have enough money to buy this");
+        else this.price=price;
     }
     
-    public int getPrice(){
+    public double getPrice(){
     
         return price;
     
     }
     
-    public void setStock(int s){
+    public void setStock(int stock){
     
-        if (s<0) System.out.println("The stock cant be menor to 0");
-        else stock = s;
+        if (stock<0) System.out.println("The stock cannot be less to 0");
+        else this.stock = stock;
     
     }
     

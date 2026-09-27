@@ -10,10 +10,11 @@ public class Patient {
     private int age;
     private double temperature;
     
+   //Adding this
     
-    public void setName(String n){
+    public void setName(String name){
     
-        name=n;
+        this.name=name;
     
     
     }
@@ -25,10 +26,10 @@ public class Patient {
     }
     
     
-    public void setAge(int a){
+    public void setAge(int age){
     
-        if(a<0 || a>110) System.out.println("Edad no valida");
-        else age = a;
+        if(age<0 || age>110) System.out.println("Edad no valida");
+        else this.age = age;
     
     }
     
@@ -38,10 +39,10 @@ public class Patient {
     
     }
     
-    public void setTemperature(double t){
+    public void setTemperature(double temperature){
     
-        if(t<35||t>42) System.out.println("The temperature is not correct");
-        else temperature = t;
+        if(temperature<35||temperature>42) System.out.println("The temperature is not correct");
+        else this.temperature = temperature;
     }
     
     public double getTemperature(){
