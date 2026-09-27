@@ -10,9 +10,10 @@ public class Student {
       private int age;
       private int grade;
       
-      public void setName(String n){
+    //Adding this
+      public void setName(String name){
       
-          name = n;
+          this.name = name;
       
       }
       
@@ -21,10 +22,10 @@ public class Student {
           return name;
       }
 
-      public void setAge(int a){
+      public void setAge(int age){
 
-          if (a<15 || a>30) System.out.println("That age is no correct");
-          else age=a;
+          if (age<15 || age>30) System.out.println("That age is no correct");
+          else this.age=age;
 
       }
       
@@ -34,10 +35,10 @@ public class Student {
 
       }
 
-      public void setGrade(int g){
+      public void setGrade(int grade){
 
-       if (g<0 || g>10) System.out.println("Invalid grade");
-       else grade=g;
+       if (grade<0 || grade>10) System.out.println("Invalid grade");
+       else this.grade=grade;
       
       }
 
