@@ -9,39 +9,40 @@ package OopExercise;
 
 public class Bank_Account {
     
-    private String owner_name;
-    private int account_number;
+    private String name;
+    private int account;
     private double balance;
     
+  //Adding this
     
-    public void setOwnerName(String n){
+    public void setOwnerName(String name){
     
-        owner_name = n;
+        this.name = name;
     
     }
     
     public String getOwnerName(){
     
-        return owner_name;
+        return name;
     
     }
     
-    public void setAccountNumber(int a){
+    public void setAccountNumber(int account){
     
-        account_number = a;
+        this.account = account;
     
     }
     
     public int getAccountNumber(){
     
-        return account_number;
+        return account;
     
     }
     
-    public void setBalance(double b){
+    public void setBalance(double balance){
         
-        if(b<0) System.out.println("The balance must not be negative");
-        else balance = b;
+        if(balance<0) System.out.println("The balance must not be negative");
+        else this.balance = balance;
     
         
     }
