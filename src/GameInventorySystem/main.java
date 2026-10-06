@@ -34,7 +34,7 @@ public class main {
            
         inventary[counter].setPlataform(JOptionPane.showInputDialog("Enter plataform game"));
            
-        inventary[counter].setPrice(Integer.parseInt(JOptionPane.showInputDialog("Enter game price")));
+        inventary[counter].setPrice((double)Integer.parseInt(JOptionPane.showInputDialog("Enter game price")));
             
         inventary[counter].setStock((int)(Math.random()*20));
         
@@ -44,13 +44,21 @@ public class main {
         
         case 2:
         
-           
-        
-        
-    
-    
-    }
-   
-    
-    }
+            if (counter > 0){
+            
+                for(videGame Element : inventary){
+                    
+                    System.out.println(inventary[counter].getName());
+                    System.out.println(inventary[counter].getPlataform());
+                    System.out.println(inventary[counter].getPrice());
+                    System.out.println(inventary[counter].getStock());
+                }  }  
+                else System.out.println("Inventory empty");
+                
 }
+    
+    
+    }
+    }
+    
+
