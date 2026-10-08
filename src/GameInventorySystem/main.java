@@ -11,6 +11,9 @@ public class main {
     videGame[] inventary = new videGame[5];
     
     int option;
+    
+    //Object counter
+    int counter=0;
    
     //Do-While menu
     do{
@@ -22,9 +25,9 @@ public class main {
                                                        + "5. Show staidstics\n"
                                                        + "6. Exit"));
     
-    //Object counter
     
-    int counter=0;
+    
+    
     
     
     
@@ -51,13 +54,17 @@ public class main {
         
             if (counter > 0){
             
-                for(videGame Element : inventary){
+                for (int i = 0; i < counter; i++) {
                     
-                    System.out.println(inventary[counter].getName());
-                    System.out.println(inventary[counter].getPlataform());
-                    System.out.println(inventary[counter].getPrice());
-                    System.out.println(inventary[counter].getStock());
-                }  }  
+                    System.out.println(inventary[i].getName());
+                    System.out.println(inventary[i].getPlataform());
+                    System.out.println(inventary[i].getPrice());
+                    System.out.println(inventary[i].getStock());
+                    
+                }
+   
+            
+            }  
                 else System.out.println("Inventory empty");
                 
 }
