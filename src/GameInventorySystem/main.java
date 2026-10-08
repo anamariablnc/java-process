@@ -10,10 +10,12 @@ public class main {
         
     videGame[] inventary = new videGame[5];
     
-    
-    // menu
-    
-    int option = Integer.parseInt(JOptionPane.showInputDialog("MENU \n1.Register video game\n"
+    int option;
+   
+    //Do-While menu
+    do{
+        
+    option = Integer.parseInt(JOptionPane.showInputDialog("MENU \n1.Register video game\n"
                                                        + "2. Show Inventary\n"
                                                        + "3. Search videogame\n"
                                                        + "4. Buy videogame\n"
@@ -23,6 +25,9 @@ public class main {
     //Object counter
     
     int counter=0;
+    
+    
+    
     
     switch(option){
     
@@ -57,6 +62,8 @@ public class main {
                 
 }
     
+    }while(option!=6);
+   
     
     }
     }
