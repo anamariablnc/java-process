@@ -66,6 +66,28 @@ public class main {
             
             }  
                 else System.out.println("Inventory empty");
+        break;
+        
+        case 3:
+            
+            String SearchGame = JOptionPane.showInputDialog("Search game");
+            
+            if(counter > 0){
+            
+                for (int i = 0; i < counter; i++) {
+                    
+                    if(inventary[i].equals("SearchGame")){
+                    
+                        System.out.println(inventary[i].getName());
+                        System.out.println(inventary[i].getPlataform());
+                        System.out.println(inventary[i].getPrice());
+                        System.out.println(inventary[i].getStock());
+                    
+                    }
+                    
+                }
+            
+            }
                 
 }
     
