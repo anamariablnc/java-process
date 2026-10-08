@@ -76,7 +76,7 @@ public class main {
             
                 for (int i = 0; i < counter; i++) {
                     
-                    if(inventary[i].equals("SearchGame")){
+                    if(inventary[i].getName().equals(SearchGame)){
                     
                         System.out.println(inventary[i].getName());
                         System.out.println(inventary[i].getPlataform());
@@ -87,7 +87,8 @@ public class main {
                     
                 }
             
-            }
+            }else System.out.println("Game dont found");
+        break;
                 
 }
     
